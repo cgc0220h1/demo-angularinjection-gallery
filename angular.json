@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "demo-angularinjection-gallery"
+    }
+  },
+  "defaultProject": "demo-angularinjection-gallery",
+  "cli": {
+    "analytics": false
+  }
 }
