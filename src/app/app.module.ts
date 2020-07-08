@@ -1,8 +1,9 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import {BrowserModule} from '@angular/platform-browser';
+import {NgModule} from '@angular/core';
 
-import { AppComponent } from './app.component';
+import {AppComponent} from './app.component';
 import {ImageGalleryModule} from './image-gallery/image-gallery.module';
+import {GalleryConfig} from './image-gallery/token';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,10 @@ import {ImageGalleryModule} from './image-gallery/image-gallery.module';
     BrowserModule,
     ImageGalleryModule
   ],
-  providers: [],
+  providers: [
+    {provide: GalleryConfig, useValue: 2}
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
