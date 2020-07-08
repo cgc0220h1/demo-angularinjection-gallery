@@ -1,2 +1,5 @@
-<p>image-gallery works!</p>
-<app-image-card></app-image-card>
+<div class="gallery-container">
+  <div class="gallery-item" *ngFor="let image of listImage">
+    <app-image-card [src]="image"></app-image-card>
+  </div>
+</div>
